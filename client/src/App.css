@@ -1,0 +1,40 @@
+h1 {
+  text-align: center;
+}
+
+h4 {
+  margin-bottom: -0.15rem;
+}
+
+#postCard {
+  max-width: 500px;
+  display: grid;
+  gap: 0.5rem;
+  margin: 2rem auto;
+}
+
+#postCard button {
+  justify-self: end;
+  max-width: 15rem;
+  min-width: 10rem;
+}
+
+main {
+  margin: 2rem 0;
+}
+
+main > * {
+  margin: 0.5rem;
+}
+
+@media only screen and (min-width: 800px) {
+  main {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+main > h3 {
+  grid-column: span 3;
+}
